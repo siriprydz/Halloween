@@ -7,8 +7,8 @@
 <h1 align="center">🎃 Halloween Countdown</h1>
 
 <p align="center">
-  <a href="https://<ditt-användarnamn>.github.io/halloweenprojekt/">Live Demo</a> •
-  <a href="https://github.com/<ditt-användarnamn>/halloweenprojekt">GitHub Repo</a>
+  <a href="https://siriprydz.github.io/Halloween/">Live Demo</a> •
+  <a href="https://github.com/siriprydz/Halloween">GitHub Repo</a>
 </p>
 
 A spooky countdown timer built with **HTML**, **CSS**, and **JavaScript**.  
@@ -18,7 +18,7 @@ Displays a 🎃 message when the countdown reaches zero.
 ## ✨ Features
 
 - ⏰ Dynamic countdown updated every second
-- 🎨 Custom Halloween theme with Google Fonts
+- 🎨 Custom Halloween theme
 - 💀 Alert message when Halloween starts
 - 📱 Responsive design for mobile and desktop
 
@@ -30,17 +30,13 @@ Displays a 🎃 message when the countdown reaches zero.
 
 ## 📂 Project Structure
 
-<pre><code>halloweenprojekt/ ├─ index.html ├─ style.css ├─ script.js </code></pre>
+<pre><code>Halloween/ ├─ index.html ├─ style.css ├─ script.js </code></pre>
 
 ## 🧠 Lessons Learned
 
-- Difference between absolute and relative paths in HTML
-- Filenames are case-sensitive on GitHub Pages
 - Practiced Date object, DOM manipulation, and setInterval
-- Learned to debug deployment issues and branch management
 
 ## 👩‍💻 Author
 
 **<Ditt Siri Prydz>** – Frontend Developer, UX- and Graphic Designer
-📧 <din.e-post@adress.se>  
-🌐 [Portfolio] https://siriprydz.wixsite.com/graphicdesign | 🔗 [LinkedIn] https://www.linkedin.com/in/siriprydz/
+🌐 [Portfolio] (https://siriprydz.wixsite.com/graphicdesign) | 🔗 [LinkedIn] (https://www.linkedin.com/in/siriprydz/)
