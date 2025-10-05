@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 h1 {
   text-align: center;
   font-size: 40pt;
@@ -16,4 +20,22 @@ body {
   text-align: center;
   font-size: 70pt;
   font-family: "Irish Grover", system-ui;
+}
+
+#ghostPath {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+}
+
+#pacmanGhost {
+  max-width: 150px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.flip {
+  transform: scaleX(-1);
 }
