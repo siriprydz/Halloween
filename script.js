@@ -1,23 +1,49 @@
 let countdown = document.querySelector(".countdown");
+let heading = document.querySelector(".heading");
+
 console.log(countdown);
 
-let halloween = new Date(2025, 9, 31);
-let today = new Date();
-let timeLeft = halloween - today;
+const halloween = new Date(2025, 9, 31);
+let timeLeft;
 
-console.log(timeLeft);
-console.log(halloween);
-console.log(today);
+const millisecondsPerSecond = 1000;
+const secondsPerDay = 24 * 60 * 60;
+const secondsPerHour = 60 * 60;
+const secondsPerMinute = 60;
 
-let millisecondsPerSecond = 1000;
-let totalSeconds = Math.floor(timeLeft / millisecondsPerSecond);
-let secondsPerDay = 24 * 60 * 60;
-let days = Math.floor(totalSeconds / secondsPerDay);
-let remainingSecondsAfterDays = totalSeconds % secondsPerDay;
-let secondsPerHour = 60 * 60;
-let hours = Math.floor(remainingSecondsAfterDays / secondsPerHour);
-let remainingSecondsAfterHours = remainingSecondsAfterDays % secondsPerHour;
-let secondsPerMinute = 60;
-let minutes = Math.floor(remainingSecondsAfterHours / secondsPerMinute);
-let seconds = remainingSecondsAfterHours % secondsPerMinute;
+let runEverySecond = setInterval(counter, 1000);
 
+function counter() {
+  timeLeft = halloween - new Date();
+  Math.max(timeLeft, 0);
+
+  if (timeLeft <= 0) {
+    alert("It is Halloween today!");
+    countdown.textContent = "00 : 00 : 00 : 00";
+    heading.textContent = "It is Halloween today!";
+    
+
+    clearInterval(runEverySecond);
+  } else {
+    let totalSeconds = Math.floor(timeLeft / millisecondsPerSecond);
+    let days = Math.floor(totalSeconds / secondsPerDay);
+    let remainingSecondsAfterDays = totalSeconds % secondsPerDay;
+    let hours = Math.floor(remainingSecondsAfterDays / secondsPerHour);
+    let remainingSecondsAfterHours = remainingSecondsAfterDays % secondsPerHour;
+    let minutes = Math.floor(remainingSecondsAfterHours / secondsPerMinute);
+    let seconds = remainingSecondsAfterHours % secondsPerMinute;
+
+    let formatedSeconds = String(seconds).padStart(2, "0");
+    let formatedMinutes = String(minutes).padStart(2, "0");
+    let formatedHours = String(hours).padStart(2, "0");
+
+    countdown.textContent =
+      days +
+      " : " +
+      formatedHours +
+      " : " +
+      formatedMinutes +
+      " : " +
+      formatedSeconds;
+  }
+}
