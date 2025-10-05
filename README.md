@@ -38,5 +38,5 @@ Displays a 🎃 message when the countdown reaches zero.
 
 ## 👩‍💻 Author
 
-**<Ditt Siri Prydz>** – Frontend Developer, UX- and Graphic Designer
+**Siri Prydz** – Frontend Developer, UX- and Graphic Designer <br>
 🌐 [Portfolio] (https://siriprydz.wixsite.com/graphicdesign) | 🔗 [LinkedIn] (https://www.linkedin.com/in/siriprydz/)
