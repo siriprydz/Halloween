@@ -11,6 +11,7 @@ const secondsPerDay = 24 * 60 * 60;
 const secondsPerHour = 60 * 60;
 const secondsPerMinute = 60;
 
+counter();
 let runEverySecond = setInterval(counter, 1000);
 
 function counter() {
