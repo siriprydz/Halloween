@@ -50,4 +50,10 @@ function counter() {
 //wandering ghost
 
 let pacmanGhost = document.querySelector("#pacmanGhost");
-console.log(pacmanGhost);
+let ghostPath = document.querySelector("#ghostPath")
+
+let ghostWalk = setInterval (oneStep, 1000);
+
+const oneStep () => {
+
+}
