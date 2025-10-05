@@ -17,3 +17,8 @@ body {
   font-size: 70pt;
   font-family: "Irish Grover", system-ui;
 }
+
+
+#pacmanGhost {
+    max-width: 200px;
+}

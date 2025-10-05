@@ -21,7 +21,6 @@ function counter() {
     alert("It is Halloween today!");
     countdown.textContent = "00 : 00 : 00 : 00";
     heading.textContent = "It is Halloween today!";
-    
 
     clearInterval(runEverySecond);
   } else {
@@ -47,3 +46,8 @@ function counter() {
       formatedSeconds;
   }
 }
+
+//wandering ghost
+
+let pacmanGhost = document.querySelector("#pacmanGhost");
+console.log(pacmanGhost);
